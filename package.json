@@ -3,16 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  "homepage": "https://CoderAyushgupta.github.io/S9_CICD2",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
+
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.7",
